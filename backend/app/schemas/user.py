@@ -4,7 +4,11 @@ class UserCreate(BaseModel):
     name: str
     email: EmailStr
     password: str
-
+    
+class UserLogin(BaseModel):          # 👈 Add this
+    email: str
+    password: str
+    
 class UserResponse(BaseModel):
     id: int
     name: str
